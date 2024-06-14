@@ -1,0 +1,76 @@
+<!-- kadai10.html -->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- link rel="stylesheet" -->
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="../css/common.css">
+
+
+  <!-- web font for google -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+  <!-- Material icons for google -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <title>kadai10 - JavaScript1</title>
+</head>
+<body class="box-border">
+<div id="wrapper">
+<header>
+    <h1 id="logo">JS Method</h1>
+</header>
+
+<div id="content-wrap">
+    <div id="content">
+        <div class="wrapper">
+            <h2 class="text-2xl mb-5">グルメサーチ</h2>
+
+            <section id="search" class="mb-10">
+                <div class="flex flex-col sm:flex-row gap-10 p-5 bg-gray-50 border-4 border-solid border-gray-600 rounded-md">
+
+                    <div class="flex flex-col w-full sm:w-1/3">
+                        <div class="grow flex flex-col mb-5">
+                            <label class="text-lg text-gray-600">キーワード</label>
+                            <input type="text" id="keyword" class="grow bg-white text-lg px-3 py-1 border-2 border-solid border-gray-600 rounded-md" placeholder="東京">
+                        </div>
+                        <button type="button" id="btn_search" class="lg:w-2/12 text-white text-lg bg-sky-500 hover:bg-sky-600 py-2 rounded-md">検索</button>
+                    </div>
+
+                    <div class="grow flex flex-col w-full sm:w-1/3">
+                        <p class="text-lg text-gray-600">表示件数</p>
+                        <div class="flex flex-row">
+                            <label class="text-lg mr-5"><input type="radio" name="count" value="10" checked>10件</label>
+                            <label class="text-lg mr-5"><input type="radio" name="count" value="30">30件</label>
+                            <label class="text-lg mr-5"><input type="radio" name="count" value="50">50件</label>
+                            <label class="text-lg"><input type="radio" name="count" value="100">100件</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="search_result">
+                <!-- 検索結果表示用の領域 -->
+            </section>
+
+        </div><!--/.wrapper-->
+    </div><!--/#content-->
+
+</div><!--/#content-wrap-->
+
+<footer>
+    <div id="top-area"><a href="#wrapper"><i class="material-icons">keyboard_arrow_up</i></a></div>
+    <p id="year" class="font-weight-b"><min>copyright &copy; <span id="year">2020</span> ECC Design Collage</min></p>
+</footer>
+
+</div><!--/#wrapper-->
+
+<script src="../js/kadai10.js"></script>
+</body>
+</html>
